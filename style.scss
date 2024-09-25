@@ -5,6 +5,7 @@
 
 body {
     background-color: #EFEAE3;
+    box-sizing: content-box;
     overflow-x: hidden;
 }
 
@@ -131,21 +132,82 @@ span {
 }
 
 .marquee {
-    height: 15vh;
+    height: 20vh;
     width: 100%;
-
-
 
     marquee {
         height: 100%;
-        width: 100%;
 
-        .dot {
-            height: 5rem;
-            width: 5rem;
-            border-radius: 50%;
-            background-color: red;
+        span {
+            .dot {
+                height: 5rem;
+                width: 5rem;
+                border-radius: 50%;
+            }
+        }
+
+        span {
+            height: 100%;
+            font-size: 10rem;
+            font-weight: 600;
+            display: inline;
+            border: none;
+            outline: none;
+        }
+    }
+
+}
+
+.group {
+    padding: 5rem;
+    height: 70vh;
+    width: 90%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: aqua;
+    position: relative;
+
+    .groupright {
+        height: 40%;
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        font-size: 1.1rem;
+        z-index: 2;
+
+
+        img {
+            height: 50%;
+            width: 100%;
+            border-radius: 1rem;
+        }
+    }
+
+    .groupleft {
+        height: 40%;
+        width: 50%;
+        font-size: 2.5rem;
+        z-index: 2;
+
+        h1 {
+            font-weight: 900;
+
         }
 
     }
+
+    .bgcircle {
+        height: 30rem;
+        width: 30rem;
+        border-radius: 50%;
+        filter: blur(10px);
+        position: absolute;
+        top: 20%;
+        right: 50%;
+    }
+
+
 }
