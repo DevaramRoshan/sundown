@@ -139,7 +139,6 @@ span {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  background-color: aqua;
   position: relative;
 }
 .group .groupright {
